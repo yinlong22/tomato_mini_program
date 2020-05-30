@@ -1,5 +1,4 @@
 const {http} = require('../../lib/http.js');
-
 Page({
   updateId: '',
   updatIndex: '',
