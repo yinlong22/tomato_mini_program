@@ -1,13 +1,16 @@
 {
-  "pages": [
-    "pages/tomato/tomato",
-    "pages/home/home"
+  "pages":[
+    "pages/home/home",
+    "pages/binding/binding",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/tomato/tomato"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
+  "window":{
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "番茄闹钟",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "color": "#515151",
@@ -22,18 +25,11 @@
         "selectedIconPath": "images/home-active.png"
       },
       {
-        "pagePath": "pages/home/home",
-        "text": "数据统计",
-        "iconPath": "images/total.png",
-        "selectedIconPath": "images/total-active.png"
-      },
-      {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "images/me.png",
         "selectedIconPath": "images/me-active.png"
       }
     ]
-  },
-  "sitemapLocation": "sitemap51.json"
+  }
 }
