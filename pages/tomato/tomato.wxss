@@ -1,5 +1,4 @@
 /* pages/tomato/tomato.wxss */
-/* pages/tomato/tomato.wxss */
 .cantainer {
   background: #F0F7F6;
   height: 100vh;

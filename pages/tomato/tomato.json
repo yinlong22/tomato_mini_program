@@ -1,7 +1,7 @@
 {
   "usingComponents": {
-    "t-button":"../../components/button",
-    "t-block":"../../components/clock",
+    "t-button": "../../components/button/button",
+    "t-clock": "../../components/clock/clock",
     "t-confirm": "../../components/confirm/confirm"
   }
 }

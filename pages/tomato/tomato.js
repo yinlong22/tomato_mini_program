@@ -1,4 +1,3 @@
-// pages/tomato/tomato.js
 const { http } = require('../../lib/http.js');
 
 Page({
