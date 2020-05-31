@@ -7,7 +7,8 @@ Page({
     visibleCreateConfirm: false,
     visibleUpdateConfirm: false,
     updateContent: "",
-    animationData: {}
+    animationData: {},
+    complete:false
   },
   onShow(){
     http.get('/todos?completed=false').then(response=>{
@@ -50,14 +51,22 @@ Page({
   destroyTodo(event){
     let index = event.currentTarget.dataset.index
     let id = event.currentTarget.dataset.id
-    http.put(`/todos/${id}`,{
-      completed: true
-    })
+    this.setData({complete:true})
+    setTimeout(()=>{
+      http.put(`/todos/${id}`,{
+        completed: true
+      })
     .then(response => {
       let todo = response.data.resource
       this.data.lists[index] = todo
       this.setData({ lists: this.data.lists })
     })
+  },2000)
+  wx.showToast({
+    title: '完成任务啦',
+    icon: 'success',
+    duration: 2000
+  })
   },
   hideCreateConfirm(){
     this.setData({ visibleCreateConfirm: false })

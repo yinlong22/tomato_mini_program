@@ -53,7 +53,7 @@
  }
 .tabs > view.active::after {
   content: "";
-  width: 80%;
+  width: 120%;
   height: 8rpx;
   border-radius: 4rpx;
   background: #FE996F;
@@ -61,8 +61,20 @@
   left: 50%;
   bottom: -16rpx;
   transform: translate(-50%,-50%);
+  animation-name: viewlinear;
+  animation-duration: .6s;
+  animation-timing-function: linear;
 }
-
+@keyframes viewlinear {
+  from {
+    width: 80%;
+    opacity: 0.2;
+  }/*结束的角度*/
+  to {
+    width: 120%;
+    opacity: 1;
+  }
+}
 .cantainer .lists { 
   flex: 1;
   padding: 0 24rpx;

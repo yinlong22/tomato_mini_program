@@ -5,7 +5,7 @@
           wx:for-index="index" 
           wx:key="{{item.id}}"   
           wx:if="{{!item.completed}}">
-      <view class="select {{item.completed && 'active'}}" 
+      <view class="select {{complete && 'active'}}" 
             bindtap='destroyTodo'
             data-index="{{index}}" 
             data-id="{{item.id}}" ></view>
